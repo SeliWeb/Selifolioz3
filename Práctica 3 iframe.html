@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tablas</title>
+    <link rel="icon" type="image/png"
+    href="Logo2.png">
+    <style>
+        table {
+            border: 1px solid peachpuff;
+            width: 75%;
+            margin: auto;
+            background: peachpuff;
+            color: sandybrown;
+        }
+        th {
+            background: peachpuff;
+            color: black;
+            font-family: arial;
+        }
+        td {
+            background: peachpuff;
+            font-family: Arial Narrow;
+            line-height: 75px;
+            padding: 15px;
+        }
+
+        /* Centrar el iframe */
+        iframe {
+            display: block;
+            margin: 0 auto;  /* Centrado horizontal */
+        }
+    </style>
+</head>
+<body style="background: peachpuff;">
+    <h1 style="text-align: center;">Sistema solar</h1>
+    <table>
+        <tr>
+            <td><img src="sol.jpg" width="200" height="100" class="planet-image" /></td>
+            <td><img src="Tierra.jpg" width="200" height="100" class="planet-image" /></td>
+            <td><img src="venus.jpg" width="200" height="100" class="planet-image" /></td>
+            <td><img src="urano.png" width="200" height="100" class="planet-image" /></td>
+        </tr>
+    </table>
+
+    <br><br>
+
+    <iframe id="imageFrame" width="500" height="250" style="border:1px solid black; background: white;"></iframe>
+
+    <script>
+        const images = document.querySelectorAll(".planet-image");
+        const iframe = document.getElementById("imageFrame");
+
+        images.forEach(image => {
+            image.addEventListener("click", function() {
+                iframe.src = image.src;
+            });
+        });
+    </script>
+</body>
+</html>
