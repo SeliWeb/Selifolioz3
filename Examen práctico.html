@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Examen práctico</title>
+</head>
+<body>
+	<h1 style="text-align:center; color: red; font-family: arial;">Programación Web I PRIM2025</h1>
+	<h2 style="text-align: center; color: #387FE3;">Evaluación práctica Parcial 1</h2>
+	<h2 style="text-align: center; color: darkviolet; font-family: Arial Narrow">Profesora: M.C. Imelda Deyanira Hernández Martínez</h2>
+	<h2 style="text-align: center; color: darkviolet; font-family: Arial Narrow">Alumno(a): Danaseli Rodríguez Beltrán</h2>
+	<section>
+	<style>
+		table{
+			border: 1px solid white;
+			width: 75%;
+			margin: auto;
+			background: white;
+			color: white;
+		}
+		th{
+			background: white;
+			color: black;
+			font-family: arial;
+		}
+		td{
+			background: white;
+			color: black;
+			font-family: Arial Narrow;
+			line-height: 15%;
+			padding: 15px;
+		}
+	</style>
+
+	<table>
+		<thead>
+			<tr>
+				<th><img src="enjoy.png" class="Dominos-pizza" ></th>
+				<th style="text-align: center;">
+					<img src="Dominos.png" width="200" height="200" class="Dominos-pizza" usemap="#mapa1" alt="Mapa de imagen">
+					<map name="mapa1">
+						<area shape="rect" coords="0,0,100,500" href="https://www.dominos.com.mx" alt="Dominos Link">
+					</map>
+				</th>
+				<th><iframe id="imageFrame" width="300" height="200" style="border:1px solid black; background: white;"></iframe></th>
+			</tr>
+		</thead>
+		<tr>
+			<td><img src="pizza1.jfif" width="250" height="200" class="Dominos-pizza" alt="Pizza 1"></td>
+			<td><img src="pizza2.jfif" width="300" height="200" class="Dominos-pizza" alt="Pizza 2"></td>
+			<td><img src="pizza3.jpg" width="270" height="200" class="Dominos-pizza" alt="Pizza 3"></td>
+		</tr>
+	</table>
+	</section>
+	<br><br>
+	<footer style="background: #387FE3; text-align: center;">Universidad Politécnica de San Luis Potosí</footer>
+	<br><br>
+	<address>Doctor Salvador 3135, 78110 San Luis Potosí, San Luis Potosí</address>
+
+	<script>
+		const images = document.querySelectorAll(".Dominos-pizza");
+		const iframe = document.getElementById("imageFrame");
+
+		images.forEach(image => {
+			image.addEventListener("click", function() {
+				iframe.src = image.src;
+			});
+		});
+	</script>
+</body>
+</html>
