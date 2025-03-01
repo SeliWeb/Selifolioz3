@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Formulario 1</title>
+	<link rel="icon" type="image/png"
+	href="Logo2.png">
+</head>
+<header>
+	<h1 style="text-align: center;">Volkswagen Potosina</h1>
+	<h2 style="text-align: center;">Compras online</h2>
+</header>
+<style type="text/css">
+	table{
+		border: 5px solid, peachpuff;
+			width: 75%;
+			margin: auto;
+			background: peachpuff;
+			color: initial;
+	}
+</style>
+<body style="background: peachpuff;">
+
+	 <form action="" method="post" enctype="text/plain">
+		<fieldset>
+			<legend>Información general del cliente</legend>
+
+			<table>
+				<tr>
+					<td><label for="nombre">Nombre:</label>
+						<input type="text" name="nombre" id="nombre" placeholder="Nombre" size="18" maxlength="30" title="Nombre" required></td>
+					<td><label for="apellidop">Apellido paterno</label></br>
+						<input type="text" name="apellidop" id="apellidop" placeholder="Apellido paterno" size="18"></td>
+					<td><label for="apellidom">Apellido materno</label></br>
+				<input type="text" name="apellidom" id="apellidom" placeholder="Apellido materno" size="18"></td>
+				</tr>
+				<tr>
+				<td><label for="nombreusuario">Nombre de usuario:</label></br>
+					<input type="text" name="Nombreusuario" id="nombreusuario" placeholder="Usuario" title="Nombre de usuario" required></td>
+				<td><label for="pass">Password:</label>
+					<input type="password" name="pass" id="pass" size="20" maxlength="20" placeholder="Contraseña" title="Contraseña" required></td>
+				<td><label for="Fechareg">Fecha de registro:</label>
+					<input type="date" name="Fechareg" id="Fechareg"></td>
+				</tr>
+			</table>
+
+		</fieldset>
+		<fieldset>
+			<legend>Datos para facturar</legend>
+
+			<table>
+				<tr>
+					<td>
+						<label for="pais">País</label></br>
+							<input type="text" name="pais" id="pais">
+					</td>
+					<td>
+						<label for="ciudad">Ciudad</label></br>
+							<input type="text" name="ciudad" id="ciudad">
+					</td>
+					<td>
+						<label for="calle">Calle</label></br>
+							<input type="text" name="calle" id="calle" placeholder="Calle">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label for="numcasa">Número de casa</label></br>
+							<input type="number" name="numcasa" id="numcasa" placeholder="Número exterior">
+					</td>
+					<td>
+						<label for="colonia">Colonia</label></br>
+							<input type="text" name="colonia" id="colonia" placeholder="Colonia">
+					</td>
+					<td>
+						<label for="correo">E-mail</label></br>
+							<input type="email" name="correo" id="correo" placeholder="E-mail" required>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label for="rfc">R.F.C</label></br>
+							<input type="text" name="rfc" id="rfc" placeholder="R.F.C" required>
+					</td>
+					<td>
+						<label for="cp">C.P</label></br>
+							<input type="text" name="cp" id="cp" placeholder="Código postal">
+					</td>
+					<td>
+						<input type="checkbox" name="termyco" id="termyco" value="1">
+							<label for="termyco">Acepto términos y condiciones</label></br>
+							<input type="submit" name="enviar" id="enviar" value="Enviar datos"><input type="submit" name="enviar" id="enviar" value="Restablecer">
+					</td>
+				</tr>
+			</table>
+		</fieldset></br>
+		<footer style="text-align: right;">Febrero 2025, SLP.</footer>
+</body>
+</html>
