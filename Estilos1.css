@@ -1,0 +1,35 @@
+body{
+	background-color: peachpuff;
+}
+table{
+	width: 100%;
+	border: 1px solid white;
+	border-collapse: collapse;
+	font-family: Arial, verdana, sans-serif;
+	caption-side: top; /*Bottom para que se vaya abajo*/
+	margin: auto;
+}
+th,td{
+	border: 1px solid white;
+}
+th{
+	padding: 15px;
+}
+td{
+	padding: 5px;
+	text-align: justify;
+}
+table tr:nth-child(odd){
+	background-color: white;
+}
+table tr:nth-child(even){
+	background-color: papayawhip;
+}
+tr th{
+	background-color: #ed9262;
+	color: white;
+}
+table tr:hover{
+	background-color: salmon;
+	color: white;
+}
