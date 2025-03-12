@@ -1,0 +1,53 @@
+body{
+	background-color: peachpuff;
+}
+ul{
+	list-style-type: none;
+	width: 20%;
+	padding: 0;
+	margin: 0;
+	height: 100%;
+	background-color: papayawhip;
+	position: fixed;
+	overflow: auto;
+}
+
+li a{
+	display: block;
+	background-color: papayawhip;
+	padding: 8px;
+	text-decoration: none;
+}
+
+li a:hover{
+	background-color: salmon;
+	color: white;
+}
+
+li a.activo{
+	background-color: #ed9262;
+	color: white;
+}
+li a:hover:not(.activo){
+	background-color: salmon;
+	color: white;
+}
+.capa1{
+	margin-left: 25% ;
+}
+@font-face{
+	font-family: "fuente1";
+	src: url("Silkscreen/Silkscreen-Regular.ttf") format("truetype");
+}
+p{
+	text-align: justify;
+	font-family: 'fuente1';
+}
+
+h1{
+	font-family: "Dancing Script", cursive;
+	font-size: 40px;
+}
+h2{
+	font-family: "Yusei Magic", sans-serif;
+}
