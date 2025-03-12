@@ -37,7 +37,7 @@ li a:hover:not(.activo){
 }
 @font-face{
 	font-family: "fuente1";
-	src: url("Silkscreen/Silkscreen-Regular.ttf") format("truetype");
+	src: url("Silkscreen-Regular.ttf") format("truetype");
 }
 p{
 	text-align: justify;
