@@ -1,0 +1,52 @@
+.contenedor{
+	position: relative;
+	background: gray;
+	height: 100px;
+}
+
+.caja1{
+	position: relative;
+	background: orange;
+	height: 50px;
+	left: 10px;
+}
+
+.caja2{
+	position: absolute;
+	background: lightblue;
+	height: 150px;
+	width: 150px;
+	left: 50px; /*Se desplaza el número de pixeles*/
+	top: 25px;
+	z-index: 1; /*Mientras mas grande sea el número, 
+	mas enfrente va a estar, y mientras menor sea, mas atrás estará*/
+}
+
+.caja3{
+	position: absolute;
+	background: pink;
+	width: 125px;
+	height: 125px;
+	right: 75px;
+	top: 40px;
+	z-index: 2;
+}
+
+.caja4{
+	position: absolute;
+	background: lightgreen;
+	width: 75px;
+	height: 75px;
+	top: 55px;
+	right: 55px;
+	z-index: 3;
+}
+
+.caja5{
+	position: fixed;
+	right: 0px;
+	bottom: 0px;
+	width: 50px;
+	border: 2px solid red;
+	z-index: 4;
+}
